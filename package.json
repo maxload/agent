@@ -1,0 +1,37 @@
+{
+  "name": "@maxload.io/agent",
+  "version": "1.0.0",
+  "description": "Agent that communicate with maxload.io service",
+  "main": "dist/index.js",
+  "bin": {
+    "maxload-agent": "dist/index.js"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "build": "rm -r ./dist; tsc && chmod +x dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxload/agent.git"
+  },
+  "author": "Max Nowack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxload/agent/issues"
+  },
+  "homepage": "https://github.com/maxload/agent#readme",
+  "dependencies": {
+    "dockerode": "^2.5.8",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^2.5.12",
+    "@types/node-fetch": "^2.1.6",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
