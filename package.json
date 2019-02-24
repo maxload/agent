@@ -1,6 +1,6 @@
 {
   "name": "@maxload.io/agent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Agent that communicate with maxload.io service",
   "main": "dist/index.js",
   "bin": {
